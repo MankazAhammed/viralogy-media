@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/viralogy-media/static/css/main.d7853b1b.css",
+    "main.js": "/viralogy-media/static/js/main.31c645db.js",
+    "static/js/453.a495e10a.chunk.js": "/viralogy-media/static/js/453.a495e10a.chunk.js",
+    "static/media/Image_one.jpg": "/viralogy-media/static/media/Image_one.d3554616c1b03b76b4a3.jpg",
+    "static/media/logo_bg_removed.png": "/viralogy-media/static/media/logo_bg_removed.0fbdd5f76929ae9e37a9.png",
+    "static/media/futuralight.ttf": "/viralogy-media/static/media/futuralight.ffe0ce1ae00c095579fe.ttf",
+    "index.html": "/viralogy-media/index.html",
+    "main.d7853b1b.css.map": "/viralogy-media/static/css/main.d7853b1b.css.map",
+    "main.31c645db.js.map": "/viralogy-media/static/js/main.31c645db.js.map",
+    "453.a495e10a.chunk.js.map": "/viralogy-media/static/js/453.a495e10a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d7853b1b.css",
+    "static/js/main.31c645db.js"
+  ]
+}
