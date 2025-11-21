@@ -1,0 +1,136 @@
+.ft-root {
+  border-top: 1px solid rgba(148, 163, 184, 0.4);
+  background: #020617;
+  color: #e5e7eb;
+}
+
+.ft-inner {
+  margin: 0 auto;
+  padding: 18px 20px 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+.ft-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.ft-logo-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  background: #c2b19c;
+  color: #020617;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.ft-brand-name {
+  font-weight: 600;
+  color: #f9fafb;
+  margin: 0;
+}
+
+.ft-tagline {
+  margin: 0;
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.ft-nav {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.ft-nav a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #e5e7eb;
+  opacity: 0.9;
+  transition: opacity 0.15s ease, color 0.15s ease;
+}
+
+.ft-nav a:hover {
+  opacity: 1;
+  color: #c2b19c;
+}
+
+.ft-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.ft-copy {
+  margin: 0;
+  color: #9ca3af;
+}
+
+.ft-social {
+  display: flex;
+  gap: 10px;
+}
+
+.ft-social a {
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #e5e7eb;
+  font-size: 13px;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.ft-social a:hover {
+  background: #c2b19c;
+  color: #020617;
+  border-color: #c2b19c;
+}
+
+@media (max-width: 768px) {
+  .ft-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .ft-meta {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 480px) {
+  .ft-inner {
+    align-items: stretch;
+  }
+
+  .ft-nav {
+    justify-content: flex-start;
+  }
+
+  .ft-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}

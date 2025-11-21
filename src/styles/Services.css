@@ -1,0 +1,144 @@
+.section-services {
+  padding: 64px 20px 72px;
+    background: linear-gradient(
+    180deg,
+    #4d7f99 0%,
+    #004066 45%,
+    #001b2b 100%
+  );
+  color: #f9fafb;
+}
+
+.section-services .sec-title {
+  color: #f9fafb;
+}
+
+.section-services .sec-sub {
+  color: #e5e7eb;
+  max-width: 640px;
+}
+
+.services-accordion-wrapper {
+  max-width: 1120px;
+  margin: 28px auto 0;
+}
+
+.services-accordion {
+  display: grid;
+  gap: 16px;
+}
+
+.accordion-item {
+  background: #f9fafb;
+  color: #111827;
+  border-radius: 20px;
+  padding: 0;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(229, 231, 235, 0.9);
+  overflow: hidden;
+}
+
+.accordion-header {
+  width: 100%;
+  padding: 18px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.accordion-title-block {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.accordion-title-block i {
+  margin-top: 4px;
+  color: #111827;
+}
+
+.accordion-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #6b7280;
+  margin: 0 0 4px;
+}
+
+.accordion-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  color: #0b0b0b;
+}
+
+.accordion-chevron {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.accordion-panel {
+  padding: 0 20px 18px 52px;
+  border-top: 1px solid #e5e7eb;
+}
+
+@media (max-width: 640px) {
+  .accordion-panel {
+    padding-left: 20px;
+  }
+}
+.accordion-desc {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #4b5563;
+}
+
+.accordion-list {
+  margin-top: 10px;
+  display: grid;
+  gap: 6px;
+  font-size: 14px;
+  color: #374151;
+  padding-left: 0;
+  list-style: none;
+}
+
+.accordion-list li i {
+  margin-right: 8px;
+  color: #111827;
+}
+
+.accordion-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #c2b19c;
+}
+
+@media (max-width: 768px) {
+  .section-services {
+    padding: 56px 16px 64px;
+  }
+
+  .services-accordion-wrapper {
+    margin-top: 24px;
+  }
+
+  .accordion-header {
+    padding: 16px 16px;
+  }
+
+  .accordion-panel {
+    padding: 0 16px 16px;
+  }
+}
