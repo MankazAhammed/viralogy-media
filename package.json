@@ -1,8 +1,8 @@
 {
-  "name": "viralogy",
+  "name": "resonance",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://MankazAhammed.github.io/viralogy-media",
+  "homepage": "https://viralogymedia.com",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.1.0",
     "@fortawesome/free-brands-svg-icons": "^7.1.0",
