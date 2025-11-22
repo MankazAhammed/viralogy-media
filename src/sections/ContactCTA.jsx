@@ -71,10 +71,10 @@ export default function ContactCTA() {
           </motion.div>
         </motion.div>
 
-        <p className="contact-footer-note">
+        {/* <p className="contact-footer-note">
           Email us at <strong>work.resonancemedia@gmail.com</strong> or call{" "}
           <strong>+91 8287492055</strong> to book your discovery call.
-        </p>
+        </p> */}
       </div>
     </section>
   );
