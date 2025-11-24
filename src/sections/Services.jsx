@@ -1,6 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
-import "../styles/Services.css"
+import Slider from "react-slick";
+import "../styles/Services.css";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faBullseye,
+  faVideo,
+  faPalette,
+  faArrowRight,
+  faCircleCheck,
+} from "@fortawesome/free-solid-svg-icons";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 18 },
@@ -9,54 +19,84 @@ const fadeUp = {
 
 const services = [
   {
-    icon: "fa-pen-nib",
-    title: "Strategic Content Writing",
-    desc:
-      "Compelling copy that reflects your authentic voice while positioning you as an authority—LinkedIn posts, long-form articles, email campaigns, and website copy.",
+    icon: faBullseye,
+    title: "Social Media Marketing",
     bullets: [
-      "Voice & tone development",
-      "Thought-leadership articles",
-      "Email & website funnels",
+      "Strategy & Growth",
+      "Content Calendars",
+      "Community Management",
+      "Performance Tracking",
+      "Multi-platform Management (Instagram, LinkedIn, Twitter, Facebook)",
     ],
   },
   {
-    icon: "fa-share-nodes",
-    title: "Social Media Management",
-    desc:
-      "We don't just post—we build communities. Strategy, calendars, daily posting, engagement, comments, and DMs across Instagram, Facebook, and X/Twitter.",
+    icon: faPalette,
+    title: "Brand & Design",
     bullets: [
-      "End-to-end content ops",
-      "Community & DM management",
-      "Analytics & growth loops",
+      "Web & App Development (on request)",
+      "Logo Design",
+      "Logo Animation",
+      "Social Media Graphics & Templates",
+      "Marketing Collateral",
+      "Brand Guidelines",
     ],
   },
   {
-    icon: "fa-bullseye",
-    title: "Brand Strategy & Positioning",
-    desc:
-      "Define your unique value proposition, craft a cohesive brand voice, and align content strategy to business goals that connect with your ideal audience.",
+    icon: faVideo,
+    title: "Content Creation",
     bullets: [
-      "UVP & messaging architecture",
-      "Audience personas",
-      "Content roadmap & KPIs",
+      "Copywriting & Storytelling",
+      "Event shoots and brand shoots in India (on request)",
+      "Visual storytelling",
+      "Iphone shoots",
+      "Event coverage",
+    ],
+  },
+  {
+    icon: faPalette,
+    title: "Campaign Management",
+    bullets: [
+      "Multi-city Campaigns",
+      "Product Launches",
+      "Event Marketing",
+      "Integrated Digital Campaigns",
+      "Performance Marketing",
     ],
   },
 ];
 
+const sliderSettings = {
+  dots: false,
+  arrows: true,
+  infinite: false,
+  speed: 500,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 640,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ],
+};
+
 export default function Services() {
-  const [activeIndex, setActiveIndex] = useState(0);
-
-  const toggleIndex = (index) => {
-    setActiveIndex((current) => (current === index ? null : index));
-  };
-
   return (
     <section id="services" className="section-services">
       <div className="container">
         <h2 className="sec-title center">What We Do</h2>
         <p className="sec-sub center">
-          From strategy to execution, we craft content engines that compound—so
-          your brand keeps resonating long after the post goes live.
+          We build content and growth systems that make your brand impossible to
+          ignore – from strategy and story to execution, distribution and
+          optimisation.
         </p>
 
         <motion.div
@@ -66,51 +106,32 @@ export default function Services() {
           whileInView="show"
           viewport={{ once: true }}
         >
-          <div className="services-accordion">
-            {services.map((s, index) => {
-              const isOpen = activeIndex === index;
-
-              return (
-                <div className="accordion-item" key={s.title}>
-                  <button
-                    type="button"
-                    className="accordion-header"
-                    onClick={() => toggleIndex(index)}
-                    aria-expanded={isOpen}
-                  >
-                    <div className="accordion-title-block">
-                      <i className={`fa-solid ${s.icon}`} />
-                      <div>
-                        <h3 className="accordion-title">{s.title}</h3>
-                      </div>
-                    </div>
-                    <i
-                      className={`fa-solid ${
-                        isOpen ? "fa-chevron-up" : "fa-chevron-down"
-                      } accordion-chevron`}
-                    />
-                  </button>
-
-                  {isOpen && (
-                    <div className="accordion-panel">
-                      <p className="accordion-desc">{s.desc}</p>
-                      <ul className="accordion-list">
-                        {s.bullets.map((b) => (
-                          <li key={b}>
-                            <i className="fa-regular fa-circle-check" />
-                            {b}
-                          </li>
-                        ))}
-                      </ul>
-                      <a href="#contact" className="accordion-link">
-                        Start now <i className="fa-solid fa-arrow-right" />
-                      </a>
-                    </div>
-                  )}
+          <Slider {...sliderSettings} className="services-slider">
+            {services.map((s) => (
+              <div className="service-slide" key={s.title}>
+                <div className="service-card">
+                  <div className="service-card-icon">
+                    <FontAwesomeIcon icon={s.icon} />
+                  </div>
+                  <h3 className="service-card-title">{s.title}</h3>
+                  <ul className="service-card-list">
+                    {s.bullets.map((b) => (
+                      <li key={b}>
+                        <FontAwesomeIcon
+                          icon={faCircleCheck}
+                          className="service-card-bullet-icon"
+                        />
+                        {b}
+                      </li>
+                    ))}
+                  </ul>
+                  <a href="#contact" className="service-card-cta">
+                    Start now <FontAwesomeIcon icon={faArrowRight} />
+                  </a>
                 </div>
-              );
-            })}
-          </div>
+              </div>
+            ))}
+          </Slider>
         </motion.div>
       </div>
     </section>

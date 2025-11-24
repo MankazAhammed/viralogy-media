@@ -1,11 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "../styles/Hero.css";
+import banner from "../assets/banner.png";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 28 },
   show: { opacity: 1, y: 0, transition: { duration: 0.6 } },
 };
+
 const stagger = {
   hidden: {},
   show: { transition: { staggerChildren: 0.12 } },
@@ -14,7 +16,6 @@ const stagger = {
 export default function Hero() {
   return (
     <div id="hero" className="hero-wrap">
-
       <section className="hero-section">
         <div className="container hero-grid">
           <motion.div
@@ -24,38 +25,42 @@ export default function Hero() {
             className="hero-left"
           >
             <motion.h1 variants={fadeUp} className="hero-title">
-              Where Your Brand <span>Finds Its Voice</span>
+              We Strategise
+              <span>You Go Viral</span>
             </motion.h1>
 
             <motion.p variants={fadeUp} className="hero-sub">
-              We don't just create content — we create connections that matter.
-              Resonance Media is a full-service marketing agency building
-              authentic personal brands and powerful digital presences that{" "}
-              <strong>resonate</strong>.
+              We engineer viral moments that drive real growth. From content
+              that converts to campaigns that cut through the noise, your
+              brand’s breakthrough starts here.
             </motion.p>
 
             <motion.div variants={fadeUp} className="hero-cta-row">
               <a href="#contact" className="btn-primary">
                 <i className="fa-solid fa-arrow-right" />
-                <span>Book Your Free Discovery Call</span>
+                <span>Book Your Free Consultation</span>
               </a>
               <a href="#services" className="btn-ghost">
-                <span>Explore Services</span>
+                <span>Explore Our Services</span>
               </a>
             </motion.div>
 
             <motion.ul variants={fadeUp} className="hero-bullets">
               <li>
                 <i className="fa-regular fa-circle-check" />
-                Strategic content that gets remembered
+                Battle-tested strategy that actually works
               </li>
               <li>
                 <i className="fa-regular fa-circle-check" />
-                Community-first social media
+                Creative that converts and builds communities
               </li>
               <li>
                 <i className="fa-regular fa-circle-check" />
-                Brand positioning that converts
+                Data-driven campaigns optimised for ROI
+              </li>
+              <li>
+                <i className="fa-regular fa-circle-check" />
+                Fast execution at the speed of culture
               </li>
             </motion.ul>
           </motion.div>
@@ -67,18 +72,19 @@ export default function Hero() {
             transition={{ duration: 0.6 }}
             className="hero-right"
           >
-            <div className="mockup">
-              <div className="mockup-left" />
-              <div className="mockup-right">
-                <div className="mock-title" />
-                <div className="mock-sub" />
-                <div className="mock-lines"/>
-                <div className="mock-buttons">
-                  <div className="mock-btn mock-btn-brand" />
-                  <div className="mock-btn mock-btn-gray" />
-                </div>
+            <motion.div
+              className="mockup"
+              animate={{ y: [0, -8, 0] }}
+              transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+            >
+              <div className="mockup-left">
+                <img
+                  src={banner}
+                  alt="Viralogy Media campaign strategy banner"
+                  className="hero-banner-img"
+                />
               </div>
-            </div>
+            </motion.div>
           </motion.div>
         </div>
       </section>

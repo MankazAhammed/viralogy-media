@@ -1,12 +1,7 @@
 .hero-wrap {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(
-    180deg,
-    #4d7f99 0%,
-    #004066 45%,
-    #001b2b 100%
-  );
+  background: linear-gradient(180deg, #4d7f99 0%, #004066 45%, #001b2b 100%);
 }
 
 @media (max-width: 768px) {
@@ -38,12 +33,7 @@
 .hero-section {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(
-    180deg,
-    #4d7f99 0%,
-    #004066 45%,
-    #001b2b 100%
-  );
+  background: linear-gradient(180deg, #4d7f99 0%, #004066 45%, #001b2b 100%);
 
   display: flex;
   align-items: center;
@@ -53,8 +43,8 @@
   .hero-section {
     min-height: auto;
     align-items: flex-start;
-    
-  padding: 56px 20px 72px;
+
+    padding: 56px 20px 72px;
   }
 }
 
@@ -71,6 +61,7 @@
   gap: 28px;
   align-items: center;
 }
+
 @media (min-width: 1024px) {
   .hero-grid {
     grid-template-columns: 1.1fr 0.9fr;
@@ -122,7 +113,7 @@
   gap: 10px;
   padding: 14px 18px;
   border-radius: 12px;
-  background: #000000;
+  background: #004066;
   color: white;
   text-decoration: none;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
@@ -155,31 +146,20 @@
   color: #ffffff;
   margin-right: 8px;
 }
-@media (min-width: 560px) {
-  .hero-bullets {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
+.hero-banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
 }
 
-.mockup {
-  border: 1px solid #e5e7eb;
-  background: #fff;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.08);
-  display: grid;
-  grid-template-columns: 2fr 3fr;
-  min-height: 340px;
-}
-.mockup-left {
-  background: #004066;
-}
 .mockup-right {
   padding: 24px;
   display: grid;
   grid-template-rows: auto auto 1fr auto;
   gap: 14px;
 }
+
 .mock-title {
   width: 120px;
   height: 12px;
@@ -215,4 +195,35 @@
 }
 .mock-btn-gray {
   background: #e5e7eb;
+}
+
+.hero-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mockup {
+  border: 1px solid #e5e7eb;
+  border-radius: 32px;
+  overflow: hidden;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12);
+  background: #004066;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+@media (max-width: 768px) {
+  .hero-right {
+    justify-content: center;
+  }
+
+  .mockup {
+    width: 100%;
+    max-width: 360px;
+    margin-top: 24px;
+  }
 }

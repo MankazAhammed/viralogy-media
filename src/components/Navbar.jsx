@@ -6,12 +6,16 @@ export default function Navbar() {
   return (
     <header className="nv-root">
       <div className="nv-inner">
-          <img src = {logo_bg} className="nv-logo"/>
+        <a href="#hero" className="nv-logo-wrap">
+          <img src={logo_bg} className="nv-logo" alt="Viralogy Media logo" />
+        </a>
 
         <nav className="nv-links">
           <a href="#about">About</a>
           <a href="#services">Services</a>
-          <a href="#process">Process</a>
+          <a href="#why-viralogy">Why Viralogy?</a>
+          <a href="#approach">Approach</a>
+          <a href="#brand-services">Brand Services</a>
           <a href="#contact">Contact</a>
           <a href="#contact" className="nv-cta">
             <span>Book a Call</span>

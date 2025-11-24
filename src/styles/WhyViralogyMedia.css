@@ -1,0 +1,127 @@
+.section-why {
+  padding: 64px 20px 80px;
+  background: linear-gradient(180deg, #001b2b 0%, #004066 45%, #4d7f99 100%);
+  color: #f9fafb;
+}
+
+.why-grid {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: grid;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.why-left {
+  max-width: 460px;
+}
+
+.why-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 11px;
+  margin: 0 0 6px;
+  color: #c2d6e6;
+}
+
+.why-title {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.why-sub {
+  color: #e5e7eb;
+}
+
+.why-right {
+  width: 100%;
+}
+
+.why-accordion {
+  display: grid;
+  gap: 12px;
+}
+
+.why-item {
+  width: 100%;
+  border-radius: 18px;
+  border: 1px solid rgba(229, 231, 235, 0.2);
+  background: rgba(15, 35, 52, 0.9);
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.18s ease, border-color 0.18s ease,
+    transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.why-item-open {
+  background: rgba(20, 52, 78, 0.98);
+  border-color: #c2b19c;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25);
+  transform: translateY(-1px);
+}
+
+.why-item-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.why-item-icon-wrap {
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  background: rgba(194, 177, 156, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.why-item-icon {
+  color: #c2b19c;
+  font-size: 16px;
+}
+
+.why-item-text {
+  display: grid;
+  gap: 2px;
+}
+
+.why-item-title {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #f9fafb;
+}
+
+.why-item-body {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #d1d5db;
+}
+
+.why-chevron {
+  font-size: 14px;
+  color: #9ca3af;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .section-why {
+    padding: 56px 16px 72px;
+  }
+
+  .why-item {
+    align-items: flex-start;
+  }
+
+  .why-chevron {
+    margin-top: 4px;
+  }
+}

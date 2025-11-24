@@ -1,12 +1,7 @@
 .section-contact {
-  padding: 64px 20px 72px;
-     background: linear-gradient(
-    180deg,
-    #001b2b 0%,
-    #004066 45%,
-    #4d7f99 100%
-  );
-  color: #f9fafb;
+    padding: 64px 20px 72px;
+    background: linear-gradient(180deg, #4d7f99 0%, #004066 45%, #001b2b 100%);
+    color: #f9fafb;
 }
 
 .contact-wrapper {

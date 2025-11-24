@@ -17,13 +17,7 @@ export default function About() {
           <h2 className="about-title">About Us</h2>
 
           <p className="about-kicker">
-            <em>Turning brands viral, one strategy at a time</em>
-          </p>
-
-          <p className="about-label">About us:</p>
-          <p className="about-body">
-            We’re <strong>Resonance Media</strong>, a marketing agency where
-            strategy meets creativity.
+            <em>We strategise you go viral</em>
           </p>
 
           <h3 className="about-subheading">Two founders. Two specialties.</h3>
