@@ -13,6 +13,8 @@ const stagger = {
   show: { transition: { staggerChildren: 0.12 } },
 };
 
+const CALENDAR_URL = "https://calendar.app.google/1KfiF3u9EradFXnZ7";
+
 export default function Hero() {
   return (
     <div id="hero" className="hero-wrap">
@@ -36,7 +38,12 @@ export default function Hero() {
             </motion.p>
 
             <motion.div variants={fadeUp} className="hero-cta-row">
-              <a href="#contact" className="btn-primary">
+              <a
+                href={CALENDAR_URL}
+                target="_blank"
+                rel="noreferrer"
+                className="btn-primary"
+              >
                 <i className="fa-solid fa-arrow-right" />
                 <span>Book Your Free Consultation</span>
               </a>

@@ -66,22 +66,28 @@ const services = [
 ];
 
 const sliderSettings = {
-  dots: false,
-  arrows: true,
+  dots: true,
   infinite: false,
   speed: 500,
-  slidesToShow: 3,
+  slidesToShow: 4,
+  waitForAnimate: false,
   slidesToScroll: 1,
-  adaptiveHeight: true,
+  initialSlide: 0,
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 1201,
       settings: {
         slidesToShow: 2,
       },
     },
     {
-      breakpoint: 640,
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 480,
       settings: {
         slidesToShow: 1,
       },

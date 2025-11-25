@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Navbar.css";
 import logo_bg from "../assets/logo_bg_removed.png";
+const CALENDAR_URL = "https://calendar.app.google/1KfiF3u9EradFXnZ7";
 
 export default function Navbar() {
   return (
@@ -17,13 +18,22 @@ export default function Navbar() {
           <a href="#approach">Approach</a>
           <a href="#brand-services">Brand Services</a>
           <a href="#contact">Contact</a>
-          <a href="#contact" className="nv-cta">
+          <a
+            href={CALENDAR_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="nv-cta"
+          >
             <span>Book a Call</span>
           </a>
         </nav>
 
-        <a href="#contact" className="nv-cta nv-cta-mobile">
-          <i className="fa-solid fa-calendar-check" />
+        <a
+          href={CALENDAR_URL}
+          target="_blank"
+          rel="noreferrer"
+          className="nv-cta nv-cta-mobile"
+        >
           <span>Book</span>
         </a>
       </div>
