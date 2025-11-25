@@ -66,28 +66,22 @@ const services = [
 ];
 
 const sliderSettings = {
-  dots: true,
+  dots: false,
+  arrows: true,
   infinite: false,
   speed: 500,
-  slidesToShow: 4,
-  waitForAnimate: false,
+  slidesToShow: 3,
   slidesToScroll: 1,
-  initialSlide: 0,
+  adaptiveHeight: true,
   responsive: [
     {
-      breakpoint: 1201,
+      breakpoint: 1024,
       settings: {
         slidesToShow: 2,
       },
     },
     {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 2,
-      },
-    },
-    {
-      breakpoint: 480,
+      breakpoint: 640,
       settings: {
         slidesToShow: 1,
       },
@@ -105,9 +99,9 @@ export default function Services() {
           ignore – from strategy and story to execution, distribution and
           optimisation.
         </p>
-
+      
         <motion.div
-          className="services-accordion-wrapper"
+          className="services-accordion-wrapper services-desktop"
           variants={fadeUp}
           initial="hidden"
           whileInView="show"
@@ -139,6 +133,39 @@ export default function Services() {
               </div>
             ))}
           </Slider>
+        </motion.div>
+
+        <motion.div
+          className="services-mobile"
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.2 }}
+        >
+          {services.map((s) => (
+            <div className="service-card-mobile" key={s.title}>
+              <div className="service-card-mobile-header">
+                <div className="service-card-mobile-icon">
+                  <FontAwesomeIcon icon={s.icon} />
+                </div>
+                <h3 className="service-card-mobile-title">{s.title}</h3>
+              </div>
+              <ul className="service-card-mobile-list">
+                {s.bullets.map((b) => (
+                  <li key={b}>
+                    <FontAwesomeIcon
+                      icon={faCircleCheck}
+                      className="service-card-mobile-bullet-icon"
+                    />
+                    {b}
+                  </li>
+                ))}
+              </ul>
+              <a href="#contact" className="service-card-mobile-cta">
+                Start now <FontAwesomeIcon icon={faArrowRight} />
+              </a>
+            </div>
+          ))}
         </motion.div>
       </div>
     </section>
