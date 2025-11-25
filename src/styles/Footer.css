@@ -1,7 +1,7 @@
 .ft-root {
   border-top: 1px solid rgba(148, 163, 184, 0.4);
   background: #020617;
-  color: #e5e7eb;
+  color: #FAF0CA;
 }
 
 .ft-inner {
@@ -26,7 +26,7 @@
   width: 32px;
   height: 32px;
   border-radius: 999px;
-  background: #c2b19c;
+  background: #FAF0CA;
   color: #020617;
   display: flex;
   align-items: center;
@@ -37,14 +37,14 @@
 
 .ft-brand-name {
   font-weight: 600;
-  color: #f9fafb;
+  color: #FAF0CA;
   margin: 0;
 }
 
 .ft-tagline {
   margin: 0;
   font-size: 12px;
-  color: #9ca3af;
+  color: #FAF0CA;
 }
 
 .ft-nav {
@@ -58,14 +58,14 @@
 .ft-nav a {
   text-decoration: none;
   font-size: 13px;
-  color: #e5e7eb;
+  color: #FAF0CA;
   opacity: 0.9;
   transition: opacity 0.15s ease, color 0.15s ease;
 }
 
 .ft-nav a:hover {
   opacity: 1;
-  color: #c2b19c;
+  color: #FAF0CA;
 }
 
 .ft-meta {
@@ -78,7 +78,7 @@
 
 .ft-copy {
   margin: 0;
-  color: #9ca3af;
+  color: #FAF0CA;
 }
 
 .ft-social {
@@ -95,15 +95,15 @@
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  color: #e5e7eb;
+  color: #FAF0CA;
   font-size: 13px;
   transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
 }
 
 .ft-social a:hover {
-  background: #c2b19c;
+  background: #FAF0CA;
   color: #020617;
-  border-color: #c2b19c;
+  border-color: #FAF0CA;
 }
 
 @media (max-width: 768px) {

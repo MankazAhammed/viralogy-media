@@ -3,9 +3,17 @@
 }
 
 @font-face {
-  font-family: "Futura Light";
-  src: url("./assets/futuralight.ttf");
-  font-weight: 300;
+  font-family: "Futura LT";
+  src: url("./assets/Futura\ LT.zip") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("./assets/Urbanist.zip") format("truetype");
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
@@ -33,11 +41,21 @@ body::-webkit-scrollbar {
 
 body {
   margin: 0;
-  font-family: "Futura Light";
-  color: #0b0b0b;
-  background: #ffffff;
+  font-family: "Urbanist";
+  color: #FAF0CA;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading-font {
+  font-family: "Futura LT";
+  color: #FAF0CA;
 }
 
 a {

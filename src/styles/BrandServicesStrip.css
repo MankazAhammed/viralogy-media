@@ -1,41 +1,41 @@
 .brand-strip-section {
   padding: 64px 20px 80px;
-  background: linear-gradient(180deg, #001b2b 0%, #004066 45%, #4d7f99 100%);
-  color: #f9fafb;
+  background: linear-gradient(180deg, #01263c 0%, #024065 45%, #99b2c1 100%);
+  color: #faf0ca;
 }
 
+/* Make the inner container act as a flex wrapper ONLY in this section */
 .brand-strip-section .container {
   max-width: 1120px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
-/* Top image */
 .brand-strip-image-wrap {
-  margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
 }
 
+/* Image smaller + centered */
 .brand-strip-image {
-  width: 100%;
-  border-radius: 12px;
   display: block;
+  width: 100%;
+  max-width: 480px; /* smaller than before */
+  border-radius: 12px;
   object-fit: cover;
 }
 
+/* Text side – stacked items */
 .brand-strip-grid {
   display: grid;
-  gap: 32px;
+  gap: 24px;
   text-align: left;
 }
 
-@media (min-width: 900px) {
-  .brand-strip-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 40px;
-  }
-}
-
 .brand-strip-item {
-  max-width: 360px;
+  max-width: 100%;
 }
 
 .brand-strip-title {
@@ -44,7 +44,7 @@
   font-size: 13px;
   font-weight: 600;
   margin: 0 0 10px;
-  color: #f9fafb;
+  color: #faf0ca;
 }
 
 .brand-strip-divider {
@@ -58,28 +58,41 @@
   width: 6px;
   height: 6px;
   border-radius: 999px;
-  background: #c2b19c;
+  background: #faf0ca;
 }
 
 .brand-strip-divider span:last-child {
   flex: 1;
   height: 1px;
-  background: #c2b19c;
+  background: #faf0ca;
 }
 
 .brand-strip-text {
   margin: 0;
   font-size: 14px;
   line-height: 1.8;
-  color: #e5e7eb;
+  color: #faf0ca;
 }
 
+/* Desktop: side-by-side layout */
+@media (min-width: 900px) {
+  .brand-strip-section .container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .brand-strip-image-wrap {
+    flex: 1;
+  }
+
+  .brand-strip-grid {
+    flex: 1.2;
+  }
+}
+
+/* Mobile padding tweaks */
 @media (max-width: 768px) {
   .brand-strip-section {
     padding: 56px 16px 64px;
-  }
-
-  .brand-strip-item {
-    max-width: 100%;
   }
 }

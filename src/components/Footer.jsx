@@ -19,7 +19,7 @@ export default function Footer() {
         <div className="ft-brand">
           <div>
             <p className="ft-brand-name">Viralogy Media</p>
-            <p className="ft-tagline">Where your brand finds its voice.</p>
+            <p className="ft-tagline">We Strategise You Go Viral.</p>
           </div>
         </div>
 
@@ -30,7 +30,7 @@ export default function Footer() {
 
           <div className="ft-social">
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/viralogy.media/"
               target="_blank"
               rel="noreferrer"
               aria-label="Instagram"

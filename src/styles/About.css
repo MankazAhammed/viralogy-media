@@ -1,12 +1,7 @@
 .section-about {
   padding: 64px 20px 72px;
-    background: linear-gradient(
-    180deg,
-    #001b2b 0%,
-    #004066 45%,
-    #4d7f99 100%
-  );
-  color: #f9fafb;
+  background: linear-gradient(180deg, #01263c 0%, #024065 45%, #99b2c1 100%);
+  color: #faf0ca;
 }
 
 .about-grid {

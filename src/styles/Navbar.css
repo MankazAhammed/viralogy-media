@@ -11,7 +11,7 @@
   top: 0;
   z-index: 50;
   backdrop-filter: saturate(1.1) blur(8px);
-  background:#004066;
+  background:#024065;
 }
 
 .nv-inner {
@@ -38,6 +38,7 @@
   font-weight: 700;
   letter-spacing: 0.2px;
 }
+
 .nv-title-dim {
   color: #6b7280;
   font-weight: 500;
@@ -50,12 +51,12 @@
 }
 
 .nv-links a {
-  color: #ffffff;
+  color: #FAF0CA;
   text-decoration: none;
   font-size: 14px;
 }
 .nv-links a:hover {
-  color: #ffffff;
+  color: #FAF0CA;
 }
 
 .nv-cta {
@@ -64,9 +65,9 @@
   gap: 10px;
   padding: 10px 14px;
   border-radius: 12px;
-  background: #004066;
+  background: #FAF0CA;
   border: 1px solid #ffffff;
-  color: white !important;
+  color: #024065 !important;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 }
 

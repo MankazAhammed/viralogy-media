@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import "../styles/BrandServicesStrip.css";
 
-import brandImage from "../assets/Image_six.JPG";
+import brandImage from "../assets/strategy_section.png";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 18 },

@@ -1,7 +1,7 @@
 .section-contact {
-    padding: 64px 20px 72px;
-    background: linear-gradient(180deg, #4d7f99 0%, #004066 45%, #001b2b 100%);
-    color: #f9fafb;
+  padding: 64px 20px 72px;
+  background: linear-gradient(180deg, #99b2c1 0%, #024065 45%, #01263c 100%);
+  color: #FAF0CA;
 }
 
 .contact-wrapper {
@@ -49,8 +49,8 @@
 }
 
 .contact-tile {
-  background: #f9fafb;
-  color: #111827;
+  background: #FAF0CA;
+  color: #024065;
   border-radius: 20px;
   padding: 20px 22px;
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
@@ -61,7 +61,7 @@
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: #6b7280;
+  color: #024065;
   margin-bottom: 6px;
 }
 
@@ -69,12 +69,13 @@
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 8px;
+  color: #024065;
 }
 
 .contact-tile-body {
   font-size: 14px;
   line-height: 1.7;
-  color: #4b5563;
+  color: #024065;
 }
 
 .contact-footer-note {
