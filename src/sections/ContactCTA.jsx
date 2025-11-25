@@ -52,9 +52,7 @@ export default function ContactCTA() {
 
           <motion.div variants={fadeUp} className="contact-tile">
             <p className="contact-step-label">STEP 2</p>
-            <h3 className="contact-tile-title">
-              Receive Your Custom Strategy
-            </h3>
+            <h3 className="contact-tile-title">Receive Your Custom Strategy</h3>
             <p className="contact-tile-body">
               Get a tailored proposal with our approach, timeline, and
               investment to hit your goals.
@@ -71,10 +69,17 @@ export default function ContactCTA() {
           </motion.div>
         </motion.div>
 
-        {/* <p className="contact-footer-note">
-          Email us at <strong>work.resonancemedia@gmail.com</strong> or call{" "}
-          <strong>+91 8287492055</strong> to book your discovery call.
-        </p> */}
+        <p className="contact-footer-note">
+          Email us at{" "}
+          <a href="mailto:work@viralogymedia.com">
+            <strong>work@viralogymedia.com</strong>
+          </a>{" "}
+          to book your discovery call. By reaching out, you agree to our{" "}
+          <a href="/privacy-policy.pdf" target="_blank" rel="noreferrer">
+            Privacy Policy
+          </a>
+          .
+        </p>
       </div>
     </section>
   );

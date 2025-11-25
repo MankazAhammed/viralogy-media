@@ -260,3 +260,28 @@
   padding: 10px 16px;
   border-radius: 999px;
 }
+
+@media (max-width: 640px) {
+  .services-slider .slick-track {
+    align-items: flex-start;
+  }
+
+  .services-slider .slick-slide {
+    height: auto;
+    display: block !important;
+    padding: 0 4px;
+  }
+
+  .services-slider .slick-slide > div,
+  .service-slide,
+  .service-card {
+    height: auto;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .service-card {
+    border-radius: 18px;
+  }
+}
