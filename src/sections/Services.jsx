@@ -126,9 +126,9 @@ export default function Services() {
                       </li>
                     ))}
                   </ul>
-                  <a href="#contact" className="service-card-cta">
+                  {/* <a href="#contact" className="service-card-cta">
                     Start now <FontAwesomeIcon icon={faArrowRight} />
-                  </a>
+                  </a> */}
                 </div>
               </div>
             ))}
