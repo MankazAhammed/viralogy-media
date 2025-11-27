@@ -161,9 +161,9 @@ export default function Services() {
                   </li>
                 ))}
               </ul>
-              <a href="#contact" className="service-card-mobile-cta">
+              {/* <a href="#contact" className="service-card-mobile-cta">
                 Start now <FontAwesomeIcon icon={faArrowRight} />
-              </a>
+              </a> */}
             </div>
           ))}
         </motion.div>
