@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/static/css/main.03b8298e.css",
-    "main.js": "/static/js/main.9a1091c4.js",
+    "main.js": "/static/js/main.208e81bc.js",
     "static/js/453.5f540f01.chunk.js": "/static/js/453.5f540f01.chunk.js",
-    "static/media/strategy_section.png": "/static/media/strategy_section.c186946661ef0f0b6d52.png",
     "static/media/banner.png": "/static/media/banner.2eeedaf4928799138f9e.png",
-    "static/media/About_Us.PNG": "/static/media/About_Us.fe7e642ebe4daf57f297.PNG",
+    "static/media/About_US.jpg": "/static/media/About_US.19f28f75df01b8f07442.jpg",
     "static/media/Urbanist.zip": "/static/media/Urbanist.dbaabebea8a288b0d701.zip",
     "static/media/Futura LT.zip": "/static/media/Futura LT.0edbe1799d86360a9e00.zip",
     "static/media/logo_bg_removed.png": "/static/media/logo_bg_removed.0fbdd5f76929ae9e37a9.png",
+    "static/media/strategy_section.jpg": "/static/media/strategy_section.4e7fc2afb8c4be9075ef.jpg",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "index.html": "/index.html",
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "main.03b8298e.css.map": "/static/css/main.03b8298e.css.map",
-    "main.9a1091c4.js.map": "/static/js/main.9a1091c4.js.map",
+    "main.208e81bc.js.map": "/static/js/main.208e81bc.js.map",
     "453.5f540f01.chunk.js.map": "/static/js/453.5f540f01.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.03b8298e.css",
-    "static/js/main.9a1091c4.js"
+    "static/js/main.208e81bc.js"
   ]
 }
